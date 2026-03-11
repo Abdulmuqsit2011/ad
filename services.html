@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ambience Design — Premium home staging services. Where style meets sold.">
-  <title>Ambience Design | Home Staging</title>
+  <title>Ambience Design | Services</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -50,44 +50,70 @@
     </div>
   </div>
 
-  <!-- ========== Hero Section ========== -->
-  <section class="hero" id="hero">
-    <div class="hero__background">
-      <img src="images/hero-bg.png" alt="Elegantly staged console table with vase and mirror in a warm minimalist interior">
+  <!-- ========== Signature Services Section ========== -->
+  <section class="services" id="services">
+
+    <!-- Section Header -->
+    <div class="services__header">
+      <span class="services__header-line" aria-hidden="true"></span>
+      <h2 class="services__title">Signature Services</h2>
+      <span class="services__header-line" aria-hidden="true"></span>
     </div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__tagline">Where Style Meets Sold</p>
-      <div class="hero__divider" aria-hidden="true"></div>
-      <h1 class="hero__title">Ambience Design</h1>
-      <p class="hero__subtitle">Home Staging</p>
-      <a href="contact.html" class="hero__cta" id="cta-book-consultation">Book a Consultation</a>
+
+    <!-- Services Grid -->
+    <div class="services__grid">
+
+      <!-- Card 1: Vacant Home Staging (image left, text right) -->
+      <div class="services__card">
+        <div class="services__card-image">
+          <img src="images/service-vacant.png" alt="Beautifully staged vacant living room with arched doorway">
+        </div>
+        <div class="services__card-text">
+          <h3 class="services__card-title">Vacant Home<br>Staging</h3>
+          <p class="services__card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Occupied Staging (image left, text right) -->
+      <div class="services__card">
+        <div class="services__card-image">
+          <img src="images/service-occupied.png" alt="Elegant bathroom vanity with marble countertop">
+        </div>
+        <div class="services__card-text">
+          <h3 class="services__card-title">Occupied Staging</h3>
+          <p class="services__card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Interior Styling (image left, text right) -->
+      <div class="services__card">
+        <div class="services__card-image">
+          <img src="images/service-styling.png" alt="Bright living room with white sofa and natural light">
+        </div>
+        <div class="services__card-text">
+          <h3 class="services__card-title">Interior Styling</h3>
+          <p class="services__card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Furniture Rental (image left, text right) -->
+      <div class="services__card">
+        <div class="services__card-image">
+          <img src="images/service-furniture.png" alt="Premium round dining table with sculptural chairs">
+        </div>
+        <div class="services__card-text">
+          <h3 class="services__card-title">Furniture<br>Rental</h3>
+          <p class="services__card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- ========== Freebie / Guide Section ========== -->
-  <section class="freebie" id="freebie">
-    <div class="freebie__container">
-
-      <!-- Left: Book Mockup Image -->
-      <div class="freebie__image-col">
-        <img src="images/guide-square.png" alt="Staging Your Home Guide book sitting on a desk" class="freebie__book">
-      </div>
-
-      <!-- Right: Text + CTA -->
-      <div class="freebie__text-col">
-        <p class="freebie__label">Home Staging Client Guide</p>
-        <h2 class="freebie__heading">Freebie</h2>
-        <p class="freebie__description">
-          The Ultimate Guide to Staging Your Home<br>
-          for a Quick &amp; Profitable Sale!
-        </p>
-        <a href="#" class="freebie__cta" id="cta-download-guide">
-          <span class="freebie__cta-arrow">→</span> Download
-        </a>
-      </div>
-
-    </div>
+  <!-- ========== Tagline Banner ========== -->
+  <section class="tagline-banner">
+    <p>FROM VACANT HOME STAGING TO INTERIOR STYLING, WE BRING OUT THE BEST IN EVERY SPACE.</p>
   </section>
 
   <!-- ========== Final CTA Section ========== -->
@@ -126,25 +152,33 @@
     }
 
     // --- Content Protection Scripts ---
+    // Disable Right-Click (Context Menu)
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault();
     });
 
+    // Disable common keyboard shortcuts for DevTools and View Source
     document.addEventListener('keydown', function(e) {
+      // F12
       if (e.key === 'F12') {
         e.preventDefault();
       }
       
       if (e.ctrlKey && e.shiftKey) {
+        // Ctrl+Shift+I (Inspect)
         if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        // Ctrl+Shift+J (Console)
         if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        // Ctrl+Shift+C (Element Inspector)
         if (e.key === 'C' || e.key === 'c') e.preventDefault();
       }
       
+      // Ctrl+U (View Source)
       if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
         e.preventDefault();
       }
       
+      // Mac shortcuts (Cmd+Option+I, Cmd+Option+J, Cmd+Option+U)
       if (e.metaKey && e.altKey) {
         if (e.key === 'I' || e.key === 'i') e.preventDefault();
         if (e.key === 'J' || e.key === 'j') e.preventDefault();

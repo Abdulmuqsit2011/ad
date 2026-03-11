@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ambience Design — Premium home staging services. Where style meets sold.">
-  <title>Ambience Design | Home Staging</title>
+  <title>Ambience Design | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -50,43 +50,37 @@
     </div>
   </div>
 
-  <!-- ========== Hero Section ========== -->
-  <section class="hero" id="hero">
-    <div class="hero__background">
-      <img src="images/hero-bg.png" alt="Elegantly staged console table with vase and mirror in a warm minimalist interior">
-    </div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__tagline">Where Style Meets Sold</p>
-      <div class="hero__divider" aria-hidden="true"></div>
-      <h1 class="hero__title">Ambience Design</h1>
-      <p class="hero__subtitle">Home Staging</p>
-      <a href="contact.html" class="hero__cta" id="cta-book-consultation">Book a Consultation</a>
-    </div>
-  </section>
+  <!-- ========== Portfolio Section ========== -->
+  <section class="portfolio" id="portfolio">
 
-  <!-- ========== Freebie / Guide Section ========== -->
-  <section class="freebie" id="freebie">
-    <div class="freebie__container">
+    <!-- Header -->
+    <p class="portfolio__label">Our Client Projects</p>
+    <h2 class="portfolio__heading">Portfolio</h2>
+    <p class="portfolio__subtitle">
+      A picture is worth a thousand words.<br>
+      Check out some of our favorite transformations
+    </p>
 
-      <!-- Left: Book Mockup Image -->
-      <div class="freebie__image-col">
-        <img src="images/guide-square.png" alt="Staging Your Home Guide book sitting on a desk" class="freebie__book">
+    <!-- Projects Grid -->
+    <div class="portfolio__grid">
+      <div class="portfolio__card">
+        <div class="portfolio__card-image">
+          <img src="images/portfolio-1.png" alt="Warm modern home office with arched shelving">
+        </div>
+        <p class="portfolio__card-title">Project Title</p>
       </div>
-
-      <!-- Right: Text + CTA -->
-      <div class="freebie__text-col">
-        <p class="freebie__label">Home Staging Client Guide</p>
-        <h2 class="freebie__heading">Freebie</h2>
-        <p class="freebie__description">
-          The Ultimate Guide to Staging Your Home<br>
-          for a Quick &amp; Profitable Sale!
-        </p>
-        <a href="#" class="freebie__cta" id="cta-download-guide">
-          <span class="freebie__cta-arrow">→</span> Download
-        </a>
+      <div class="portfolio__card">
+        <div class="portfolio__card-image">
+          <img src="images/portfolio-2.png" alt="Bright contemporary living room with white sofa">
+        </div>
+        <p class="portfolio__card-title">Project Title</p>
       </div>
-
+      <div class="portfolio__card">
+        <div class="portfolio__card-image">
+          <img src="images/portfolio-3.png" alt="Luxurious modern bedroom with elegant staging">
+        </div>
+        <p class="portfolio__card-title">Project Title</p>
+      </div>
     </div>
   </section>
 
@@ -126,25 +120,33 @@
     }
 
     // --- Content Protection Scripts ---
+    // Disable Right-Click (Context Menu)
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault();
     });
 
+    // Disable common keyboard shortcuts for DevTools and View Source
     document.addEventListener('keydown', function(e) {
+      // F12
       if (e.key === 'F12') {
         e.preventDefault();
       }
       
       if (e.ctrlKey && e.shiftKey) {
+        // Ctrl+Shift+I (Inspect)
         if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        // Ctrl+Shift+J (Console)
         if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        // Ctrl+Shift+C (Element Inspector)
         if (e.key === 'C' || e.key === 'c') e.preventDefault();
       }
       
+      // Ctrl+U (View Source)
       if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
         e.preventDefault();
       }
       
+      // Mac shortcuts (Cmd+Option+I, Cmd+Option+J, Cmd+Option+U)
       if (e.metaKey && e.altKey) {
         if (e.key === 'I' || e.key === 'i') e.preventDefault();
         if (e.key === 'J' || e.key === 'j') e.preventDefault();

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ambience Design — Premium home staging services. Where style meets sold.">
+  <title>Ambience Design | About Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== Header Navigation ========== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="index.html">AD</a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="index.html" class="header__link">Home</a></li>
+          <li><a href="about.html" class="header__link">About Us</a></li>
+          <li><a href="services.html" class="header__link">Services</a></li>
+          <li><a href="portfolio.html" class="header__link">Portfolio</a></li>
+          <li><a href="faq.html" class="header__link">FAQ</a></li>
+          <li><a href="contact.html" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Toggle -->
+      <button class="header__mobile-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== Off-Canvas Mobile Menu ========== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu__content">
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close Menu">&times;</button>
+      <ul class="mobile-menu__list">
+        <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+        <li><a href="about.html" class="mobile-menu__link">About Us</a></li>
+        <li><a href="services.html" class="mobile-menu__link">Services</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="faq.html" class="mobile-menu__link">FAQ</a></li>
+        <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========== About / Our Story Section ========== -->
+  <section class="about" id="about">
+    <div class="about__container">
+
+      <!-- Left: Image -->
+      <div class="about__image-col">
+        <img src="images/about-bg.png" alt="Minimalist dining room with pendant lighting and botanical art" class="about__image">
+      </div>
+
+      <!-- Right: Text -->
+      <div class="about__text-col">
+        <p class="about__label">About Us</p>
+        <h2 class="about__heading">Our Story</h2>
+
+        <p class="about__lead">
+          A beautifully staged home isn't just about décor—it's about creating an experience.
+        </p>
+
+        <p class="about__body">
+          At [Business Name], we specialize in transforming spaces into warm, inviting homes that captivate buyers and maximize value. With a keen eye for design and a passion for staging, we help homeowners, realtors, and investors create interiors that sell faster and for top dollar.
+        </p>
+
+        <p class="about__body">
+          Whether you're preparing to list, looking to refresh your space, or styling a rental property, we make the process seamless and stress-free.
+        </p>
+
+        <p class="about__body">
+          Let's Elevate Your Home! Book a consultation today to see how staging can make all the difference.<br>
+          Based in [Your Location], proudly serving [Your Service Area]
+        </p>
+
+        <!-- Stats Bar -->
+        <div class="about__stats">
+          <div class="about__stat">
+            <svg class="about__stat-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8C17.5 8 15.5 10 15.5 12.5C15.5 15 17.5 17 20 17C22.5 17 24.5 15 24.5 12.5C24.5 10 22.5 8 20 8Z" stroke="#2a2520" stroke-width="1.5"/>
+              <path d="M12 28C12 23.6 15.6 20 20 20C24.4 20 28 23.6 28 28" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 4L21.8 7.5L25.7 8.1L22.8 10.9L23.5 14.8L20 12.9L16.5 14.8L17.2 10.9L14.3 8.1L18.2 7.5L20 4Z" stroke="#2a2520" stroke-width="1.2" fill="none"/>
+            </svg>
+            <span class="about__stat-text">Family<br>Owned</span>
+          </div>
+          <div class="about__stat">
+            <svg class="about__stat-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="18" width="24" height="14" rx="1" stroke="#2a2520" stroke-width="1.5"/>
+              <path d="M14 18V14C14 10.7 16.7 8 20 8C23.3 8 26 10.7 26 14V18" stroke="#2a2520" stroke-width="1.5"/>
+              <path d="M12 18L20 12L28 18" stroke="#2a2520" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="17" y="23" width="6" height="5" rx="0.5" stroke="#2a2520" stroke-width="1.2"/>
+            </svg>
+            <span class="about__stat-text">25 Years of<br>Experience</span>
+          </div>
+          <div class="about__stat">
+            <svg class="about__stat-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="6,30 14,22 20,26 28,14 34,10" stroke="#2a2520" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="26,10 34,10 34,18" stroke="#2a2520" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="about__stat-text">20% Avg<br>Increase</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Process Section ========== -->
+  <section class="process" id="process">
+    <div class="process__container">
+
+      <!-- Section Header -->
+      <div class="process__header">
+        <p class="process__label">Our 4-Step</p>
+        <div class="process__label-line" aria-hidden="true"></div>
+        <h2 class="process__title">Home Staging Process</h2>
+        <p class="process__subtitle">
+          Our proven process ensures your home looks its absolute best, attracting buyers and maximizing its value.
+        </p>
+      </div>
+
+      <!-- Process Grid -->
+      <div class="process__grid">
+
+        <!-- Step 1 -->
+        <div class="process__step">
+          <div class="process__number">1</div>
+          <div class="process__content">
+            <h3 class="process__step-title">Consultation &amp;<br>Assessment</h3>
+            <p class="process__step-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process__step">
+          <div class="process__number">2</div>
+          <div class="process__content">
+            <h3 class="process__step-title">Staging Plan &amp;<br>Preparation</h3>
+            <p class="process__step-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process__step">
+          <div class="process__number">3</div>
+          <div class="process__content">
+            <h3 class="process__step-title">Staging &amp; Styling</h3>
+            <p class="process__step-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process__step">
+          <div class="process__number">4</div>
+          <div class="process__content">
+            <h3 class="process__step-title">Final Touches &amp;<br>Listing Readiness</h3>
+            <p class="process__step-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== Testimonials Section ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__container">
+
+      <!-- Section Header -->
+      <div class="testimonials__header">
+        <p class="testimonials__label">What Our Clients Say</p>
+        <h2 class="testimonials__title">Testimonials</h2>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials__grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial__card">
+          <!-- Quote Icon -->
+          <svg class="testimonial__quote-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6667 25.6667C11.537 25.6667 9 23.1297 9 20C9 16.8703 11.537 14.3333 14.6667 14.3333C17.7963 14.3333 20.3333 16.8703 20.3333 20C20.3333 24.5817 18.0943 28.535 14.6667 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667C26.2037 25.6667 23.6667 23.1297 23.6667 20C23.6667 16.8703 26.2037 14.3333 29.3333 14.3333C32.463 14.3333 35 16.8703 35 20C35 24.5817 32.761 28.535 29.3333 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.6667 25.6667H9" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667H23.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.3333 20V14.3333H14.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 20V14.3333H29.3333" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+          <p class="testimonial__text">The staging made all the difference—our home sold in 48 hours!</p>
+          
+          <div class="testimonial__divider" aria-hidden="true"></div>
+          
+          <div class="testimonial__author">
+            <img src="images/avatar-1.png" alt="Emma" class="testimonial__avatar">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Emma</h4>
+              <p class="testimonial__author-title">Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial__card">
+          <!-- Quote Icon -->
+          <svg class="testimonial__quote-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6667 25.6667C11.537 25.6667 9 23.1297 9 20C9 16.8703 11.537 14.3333 14.6667 14.3333C17.7963 14.3333 20.3333 16.8703 20.3333 20C20.3333 24.5817 18.0943 28.535 14.6667 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667C26.2037 25.6667 23.6667 23.1297 23.6667 20C23.6667 16.8703 26.2037 14.3333 29.3333 14.3333C32.463 14.3333 35 16.8703 35 20C35 24.5817 32.761 28.535 29.3333 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.6667 25.6667H9" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667H23.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.3333 20V14.3333H14.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 20V14.3333H29.3333" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+          <p class="testimonial__text">Absolutely stunning designs! My Airbnb bookings doubled!</p>
+          
+          <div class="testimonial__divider" aria-hidden="true"></div>
+          
+          <div class="testimonial__author">
+            <img src="images/avatar-2.png" alt="Liz" class="testimonial__avatar">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Liz</h4>
+              <p class="testimonial__author-title">Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial__card">
+          <!-- Quote Icon -->
+          <svg class="testimonial__quote-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6667 25.6667C11.537 25.6667 9 23.1297 9 20C9 16.8703 11.537 14.3333 14.6667 14.3333C17.7963 14.3333 20.3333 16.8703 20.3333 20C20.3333 24.5817 18.0943 28.535 14.6667 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667C26.2037 25.6667 23.6667 23.1297 23.6667 20C23.6667 16.8703 26.2037 14.3333 29.3333 14.3333C32.463 14.3333 35 16.8703 35 20C35 24.5817 32.761 28.535 29.3333 31.1667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.6667 25.6667H9" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M29.3333 25.6667H23.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.3333 20V14.3333H14.6667" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 20V14.3333H29.3333" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+          <p class="testimonial__text">From the serene ambiance to the exceptional services, it's my go-to place for self-care.</p>
+          
+          <div class="testimonial__divider" aria-hidden="true"></div>
+          
+          <div class="testimonial__author">
+            <img src="images/avatar-3.png" alt="Meaghan" class="testimonial__avatar">
+            <div class="testimonial__author-info">
+              <h4 class="testimonial__author-name">Meaghan</h4>
+              <p class="testimonial__author-title">Customer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== Final CTA Section ========== -->
+  <section class="final-cta">
+    <div class="final-cta__container">
+      <p class="final-cta__label">The Ultimate Guide to Staging Your Home For a Quick & Profitable Sale!</p>
+      <h2 class="final-cta__title">Transform Spaces, Elevate<br>Homes, Sell Faster.</h2>
+      <p class="final-cta__subtitle">Discover insider tips to make your home irresistible to buyers—with our free step-by-step staging guide.</p>
+      <a href="#" class="final-cta__btn">⟶ DOWNLOAD THE GUIDE</a>
+    </div>
+  </section>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('mobile-menu-close');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const links = document.querySelectorAll('.mobile-menu__link');
+
+    function openMenu() {
+      mobileMenu.classList.add('is-open');
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('is-open');
+    }
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
+      
+      links.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+    }
+
+    // --- Content Protection Scripts ---
+    // Disable Right-Click (Context Menu)
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable common keyboard shortcuts for DevTools and View Source
+    document.addEventListener('keydown', function(e) {
+      // F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      
+      if (e.ctrlKey && e.shiftKey) {
+        // Ctrl+Shift+I (Inspect)
+        if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        // Ctrl+Shift+J (Console)
+        if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        // Ctrl+Shift+C (Element Inspector)
+        if (e.key === 'C' || e.key === 'c') e.preventDefault();
+      }
+      
+      // Ctrl+U (View Source)
+      if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+        e.preventDefault();
+      }
+      
+      // Mac shortcuts (Cmd+Option+I, Cmd+Option+J, Cmd+Option+U)
+      if (e.metaKey && e.altKey) {
+        if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        if (e.key === 'U' || e.key === 'u') e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
