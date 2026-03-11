@@ -24,6 +24,12 @@ body {
   font-family: 'Jost', sans-serif;
   overflow-x: hidden;
   padding-top: 80px; /* Space for fixed header */
+  
+  /* Prevent text selection and copying */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 /* ===================================

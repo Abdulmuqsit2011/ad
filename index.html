@@ -551,6 +551,41 @@
         link.addEventListener('click', closeMenu);
       });
     }
+
+    // --- Content Protection Scripts ---
+    // Disable Right-Click (Context Menu)
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable common keyboard shortcuts for DevTools and View Source
+    document.addEventListener('keydown', function(e) {
+      // F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      
+      if (e.ctrlKey && e.shiftKey) {
+        // Ctrl+Shift+I (Inspect)
+        if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        // Ctrl+Shift+J (Console)
+        if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        // Ctrl+Shift+C (Element Inspector)
+        if (e.key === 'C' || e.key === 'c') e.preventDefault();
+      }
+      
+      // Ctrl+U (View Source)
+      if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+        e.preventDefault();
+      }
+      
+      // Mac shortcuts (Cmd+Option+I, Cmd+Option+J, Cmd+Option+U)
+      if (e.metaKey && e.altKey) {
+        if (e.key === 'I' || e.key === 'i') e.preventDefault();
+        if (e.key === 'J' || e.key === 'j') e.preventDefault();
+        if (e.key === 'U' || e.key === 'u') e.preventDefault();
+      }
+    });
   </script>
 </body>
 </html>
